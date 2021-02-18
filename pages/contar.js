@@ -5,16 +5,30 @@ function Contar() {
     return (
         <div>
             <h1>Contar</h1>
+            <Menu />
             <Contador />
-            <br></br>
-            <Link href="/sobre">
-                <a>Acessar pág Sobre</a>
-            </Link>
-            <br></br>
-            <Link href="/">
-                <a>Acessar pág Home</a>
-            </Link>
+        </div>
+    )
+}
 
+function Menu() {
+    return (
+        <div>
+            <div>
+                <Link href="/sobre">
+                    <a>Acessar pág Sobre</a>
+                </Link>
+            </div>
+            <div>
+                <Link href="/">
+                    <a>Acessar pág Home</a>
+                </Link>
+            </div>
+            <div>
+                <Link href="/tempo">
+                    <a>Acessar pág Tempo</a>
+                </Link>
+            </div>
         </div>
     )
 }

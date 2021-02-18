@@ -4,15 +4,29 @@ function Sobre() {
     return (
         <div>
             <h1>Sobre</h1>
-            <br></br>
-            <Link href="/">
-                <a>Acessar pág Home</a>
-            </Link>
-            <br></br>
-            <Link href="/contar">
-                <a>Acessar pág Contar</a>
-            </Link>
+            <Menu />
+        </div>
+    )
+}
 
+function Menu() {
+    return (
+        <div>
+            <div>
+                <Link href="/">
+                    <a>Acessar pág Home</a>
+                </Link>
+            </div>
+            <div>
+                <Link href="/contar">
+                    <a>Acessar pág Contar</a>
+                </Link>
+            </div>
+            <div>
+                <Link href="/tempo">
+                    <a>Acessar pág Tempo</a>
+                </Link>
+            </div>
         </div>
     )
 }

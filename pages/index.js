@@ -4,14 +4,29 @@ function Home() {
     return (
         <div>
             <h1>Home</h1>
-            <br></br>
-            <Link href="/sobre">
-                <a>Acessar pág Sobre</a>
-            </Link>
-            <br></br>
-            <Link href="/contar">
-                <a>Acessar pág Contar</a>
-            </Link>
+            <Menu />
+        </div>
+    )
+}
+
+function Menu() {
+    return (
+        <div>
+            <div>
+                <Link href="/sobre">
+                    <a>Acessar pág Sobre</a>
+                </Link>
+            </div>
+            <div>
+                <Link href="/contar">
+                    <a>Acessar pág Contar</a>
+                </Link>
+            </div>
+            <div>
+                <Link href="/tempo">
+                    <a>Acessar pág Tempo</a>
+                </Link>
+            </div>
         </div>
     )
 }
