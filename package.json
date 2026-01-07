@@ -1,10 +1,12 @@
 {
   "name": "ideia-unica",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "next dev -p 1080"
+    "dev": "next dev -p 1080",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -17,9 +19,27 @@
     "url": "https://github.com/CarlosRosset/ideia-unica/issues"
   },
   "homepage": "https://github.com/CarlosRosset/ideia-unica#readme",
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
-    "next": "^10.0.7",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.1.1",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "js-yaml": "4.1.1",
+    "brace-expansion": "2.0.2",
+    "ansi-regex": "5.0.1",
+    "minimist": "1.2.8",
+    "lodash": "4.17.21"
   }
 }
